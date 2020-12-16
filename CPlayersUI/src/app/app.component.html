@@ -1,0 +1,7 @@
+<mat-toolbar color="warn">
+  <span><strong>Cricket Player</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class= "search-button"  mat-button [routerLink]="['/players/search']">Search Player</button>
+  <button mat-button [routerLink]="['/players/favouritelist']">Favourite List</button>
+  <button mat-button (click)="logoutUser()" >Logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>
